@@ -1,0 +1,154 @@
+.about_heading-box{
+    text-align: center;
+    margin-bottom: 8rem;
+
+    &:hover{
+        transform: skew(8deg, 4deg) ;
+        letter-spacing: .5rem;
+        transition: all .5s;   
+
+    }
+    @include respond(tab-port) {
+        margin-bottom: 5rem !important; 
+  }
+
+.about__heading {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $color-primary-light;
+
+    @include respond(tab-port) {
+        font-size: 3rem;  
+      }
+    
+    }
+
+}
+
+
+.about__box {
+    max-width: 114rem;
+    margin: 0 auto;
+    display: flex;
+
+    @include respond(tab-port) {
+        
+    max-width: 70rem;
+    padding: 0 3rem; 
+    flex-direction: column;
+     
+    }
+
+}
+
+
+.about__text-box {
+        width: 50%;
+        margin-right: 6rem;
+
+    @include respond(tab-port) {
+    // margin-right: 0;
+    margin: 0 auto ;
+    margin-bottom: 6rem;
+    width: 70%;
+   
+    }
+
+    
+}
+
+.about__heading_sub{
+        margin-bottom: 1.5rem !important;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    
+}
+.about__text{
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+
+}
+         
+    
+.btn_green {
+        text-decoration: none;
+        color: $color-primary;
+        font-size: 1.6rem;
+        border-bottom: 1px solid #55c57a;    
+    
+}
+
+
+.about__image-box {
+    width: 50%;
+    position: relative;
+
+    @include respond(tab-port) {
+        width: 100% !important;
+    }
+
+
+.composition_photo {
+        width: 55%;
+        position: absolute;
+        border-radius: 2px;
+        z-index: 10;
+
+        
+    &:hover {
+            transform:  scale(1.03), translateY(-1.5rem)  ;    
+            outline: 15px solid $color-primary-light;
+            outline-offset: 15px;
+            transition: all 1s; 
+            z-index: 15; 
+        }
+    
+    @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33%;
+    
+            }      
+    
+}
+.composition_photo--1 {
+        left: 0;
+        top: -2rem;
+
+    @include respond(tab-port) {
+            top: 0;
+            transform: scale(1.2);
+        
+            }
+
+}
+.composition_photo--2{
+        right: 0;
+        top: 2rem;
+
+        @include respond(tab-port) {
+            top: -1rem;
+            z-index: 100;   
+        }
+
+}
+.composition_photo--3{
+        left: 20%;
+        top: 10rem;
+
+        @include respond(tab-port) {
+            top: 1rem;
+            left: 0;
+        }
+}
+
+}
+
+
+
+
+    
+
+
